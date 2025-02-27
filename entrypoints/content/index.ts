@@ -13,7 +13,9 @@ export default defineContentScript({
 
     const manageDropdown = () => {
       // Check for existing dropdown by ID
-      const existingDropdown = document.getElementById("github-extension-dropdown");
+      const existingDropdown = document.getElementById(
+        "github-extension-dropdown",
+      );
 
       if (isRepoPage()) {
         if (!existingDropdown && !isCreatingButton) {
@@ -24,7 +26,10 @@ export default defineContentScript({
               isCreatingButton = false;
             })
             .catch((error) => {
-              console.error("Failed to create GitHub extension dropdown:", error);
+              console.error(
+                "Failed to create GitHub extension dropdown:",
+                error,
+              );
               isCreatingButton = false;
             });
         }
@@ -36,7 +41,7 @@ export default defineContentScript({
 
     // Set up initial state
     manageDropdown();
-    
+
     // Use PageObserver to watch for navigation changes
     const observer = new PageObserver(manageDropdown);
   },

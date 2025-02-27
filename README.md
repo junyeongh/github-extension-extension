@@ -14,11 +14,19 @@ I found myself frequently using these tools and wanted to extend the original br
 ## Installation
 
 1. Clone this repository:
-   ```
-   git clone https://github.com/yourusername/github-extension-extension.git
-   ```
+    ```
+    git clone https://github.com/yourusername/github-extension-extension.git
+    ```
 2. Load the extension in your browser:
-   - Chrome: Open chrome://extensions, enable "Developer mode", click "Load unpacked", and select the extension directory
+    - Chrome: Open chrome://extensions, enable "Developer mode", click "Load unpacked", and select the extension directory
+
+## Roadmap
+
+This section outlines upcoming improvements and planned features for the extension.
+
+- [ ] Update popup window
+  - [ ] Add additional services functionality
+- [ ] Add proper icons
 
 ## Acknowledgments
 

@@ -4,4 +4,7 @@ import { defineConfig } from "wxt";
 export default defineConfig({
   extensionApi: "chrome",
   modules: ["@wxt-dev/module-react"],
+  manifest: (config) => ({
+    name: "GitHub Extension Extension"
+  }),
 });
